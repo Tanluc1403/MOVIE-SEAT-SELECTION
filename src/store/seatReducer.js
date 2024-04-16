@@ -28,7 +28,7 @@ const seatReducer = (state = initialState, action) => {
 
         case "CF_VALUE":
             const newValue = action.payload;
-            state.info.disabled = newDisable;
+            state.info.checkedValue = newValue;
             return { ...state };
 
 
